@@ -6,4 +6,4 @@ This repo contains podman `Dockerfile`s for running Matlab in various places.
 
 To build, fulfil any requirements (e.g. obtaining a `matlab.tar.gz` and placing it in the right directory and do something like:
 
-`build -t matlab:r2026a .`
+`build -t matlab:r2025b .`
