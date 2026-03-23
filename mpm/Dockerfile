@@ -8,7 +8,7 @@ RUN wget https://www.mathworks.com/mpm/glnxa64/mpm -O /root/mpm
 
 RUN chmod 700  /root/mpm
 
-RUN /root/mpm install --release=R2026a --destination=/opt/matlab --products=MATLAB Parallel_Computing_Toolbox
+RUN /root/mpm install --release=R2025b --destination=/opt/matlab --products=MATLAB Parallel_Computing_Toolbox
 
 RUN mkdir -p /opt/matlab/bin/matlab/licenses
 
