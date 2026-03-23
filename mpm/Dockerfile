@@ -14,6 +14,9 @@ RUN mkdir -p /opt/matlab/licenses
 
 ADD network.lic /opt/matlab/licenses/network.lic
 
+# Fix constant du warnings because /boot doesn't exist
+RUN mkdir /boot
+
 RUN mkdir -p /root/Documents/MATLAB
 
 WORKDIR /root/Documents/MATLAB
