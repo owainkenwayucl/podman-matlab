@@ -10,6 +10,10 @@ RUN chmod 700  /root/mpm
 
 RUN /root/mpm install --release=R2026a --destination=/opt/matlab --products=MATLAB Parallel_Computing_Toolbox
 
+RUN mkdir -p /opt/matlab/bin/matlab/licenses
+
+ADD network.lic /opt/matlab/bin/matlab/licenses/network.lic
+
 RUN mkdir -p /root/Documents/MATLAB
 
 WORKDIR /root/Documents/MATLAB
