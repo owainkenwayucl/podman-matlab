@@ -10,9 +10,9 @@ RUN chmod 700  /root/mpm
 
 RUN /root/mpm install --release=R2025b --destination=/opt/matlab --products=MATLAB Parallel_Computing_Toolbox
 
-RUN mkdir -p /opt/matlab/bin/matlab/licenses
+RUN mkdir -p /opt/matlab/licenses
 
-ADD network.lic /opt/matlab/bin/matlab/licenses/network.lic
+ADD network.lic /opt/matlab/licenses/network.lic
 
 RUN mkdir -p /root/Documents/MATLAB
 
